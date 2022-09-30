@@ -1,0 +1,15 @@
+var abecedario=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ', 'O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+var key=['Z','Y','X','W','V','U','T','S','R','Q','P','O','Ñ','N','M', 'L','K','J','I','H','G','F','E','D','C','B','A'];
+var letra=0;
+
+function descifrar(){
+  for(var i = 0, o = {}, l = abecedario.length; i < l; i++){
+    o[abecedario[i]] = key[i];
+    cons
+}
+        
+        
+    }
+    
+
+descifrar()
