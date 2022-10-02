@@ -1,15 +1,31 @@
-var abecedario=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ', 'O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-var key=['Z','Y','X','W','V','U','T','S','R','Q','P','O','Ñ','N','M', 'L','K','J','I','H','G','F','E','D','C','B','A'];
-var letra=0;
+var abecedario = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","ñ","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","Ñ","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+var key =        ["z","y","x","w","v","u","t","s","r","q","p","o","ñ","n","m","l","k","j","i","h","g","f","e","d","c","b","a","Z","Y","X","W","V","U","T","S","R","Q","P","O","Ñ","N","M","L","K","J","I","H","G","F","E","D","C","B","A"];
 
-function descifrar(){
-  for(var i = 0, o = {}, l = abecedario.length; i < l; i++){
-    o[abecedario[i]] = key[i];
-    cons
+
+var mensajeCifrado = '';
+var salteos=2
+
+function cifrar(){
+  
+  for ( i=0; i<mensaje.length; i++) {
+	letra = mensaje[i];
+	if(/^[a-z A-Z]+$/.test(letra)){
+		posicion = abecedario.indexOf(letra);
+		final=mensajeCifrado + key[posicion + salteos];
+		console.log('Texto plano=',mensaje)
+		console.log('Texto cifrado=',final)
+	}
+	else if(/^([0-9])*$/.test(letra)){
+		console.log('mal')
+		
+	}
+
+	
+
+	
+ 
 }
-        
-        
-    }
-    
+}
+cifrar(mensaje='HOLA ')
 
-descifrar()
+
